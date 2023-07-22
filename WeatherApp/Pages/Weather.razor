@@ -1,0 +1,25 @@
+@page "/weather"
+@inject WeatherService WeatherService
+
+<h1>Weather</h1>
+
+@if (_weatherData == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <p>City: @_weatherData.name</p>
+    <p>Temperature: @_weatherData.main.temp</p>
+    <p>Conditions: @_weatherData.weather[0].description</p>
+    <p>Wind Speed: @_weatherData.wind.speed</p>
+}
+
+@code {
+    private WeatherResponse _weatherData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _weatherData = await WeatherService.GetWeatherAsync("Glasgow");
+    }
+}
