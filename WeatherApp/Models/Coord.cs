@@ -1,3 +1,4 @@
+namespace WeatherApp.Models;
 public class Coord
 {
     public double lon { get; set; }

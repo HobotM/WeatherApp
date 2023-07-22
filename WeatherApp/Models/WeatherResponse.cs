@@ -1,3 +1,4 @@
+namespace WeatherApp.Models;
 public class WeatherResponse
 {
     public Coord coord { get; set; }

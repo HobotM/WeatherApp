@@ -1,3 +1,4 @@
+namespace WeatherApp.Models;
 public class Weather
 {
     public int id { get; set; }

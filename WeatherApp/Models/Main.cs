@@ -1,3 +1,4 @@
+namespace WeatherApp.Models;
 public class Main
 {
     public double temp { get; set; }
