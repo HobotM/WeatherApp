@@ -1,26 +1,29 @@
 @page "/weather"
 @inject WeatherService WeatherService
-@using WeatherApp.Models 
 
-<h1>Weather</h1>
+<EditForm Model="@WeatherRequest" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
-@if (_weatherData == null)
+    <InputText id="city" @bind-Value="@WeatherRequest.City"></InputText>
+
+    <button type="submit">Get Weather</button>
+</EditForm>
+
+@if (WeatherResponse != null)
 {
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <p>City: @_weatherData.name</p>
-    <p>Temperature: @_weatherData.main.temp</p>
-    <p>Conditions: @_weatherData.weather[0].description</p>
-    <p>Wind Speed: @_weatherData.wind.speed</p>
+    <h1>Weather in @WeatherResponse.Name</h1>
+    <p>Temperature: @(WeatherResponse.Main?.Temp ?? 0.0) ℃</p>
+    <p>Description: @(WeatherResponse.Weather?.FirstOrDefault()?.Description ?? "N/A")</p>
+    <p>Wind speed: @(WeatherResponse.Wind?.Speed ?? 0.0) m/s</p>
 }
 
 @code {
-    private WeatherResponse _weatherData;
+    WeatherRequest WeatherRequest = new WeatherRequest();
+    WeatherResponse WeatherResponse;
 
-    protected override async Task OnInitializedAsync()
+    private async Task HandleValidSubmit()
     {
-        _weatherData = await WeatherService.GetWeatherAsync("Glasgow");
+        WeatherResponse = await WeatherService.GetWeather(WeatherRequest.City);
     }
 }

@@ -1,16 +1,47 @@
-namespace WeatherApp.Models;
+using System.Collections.Generic;
+using System.Text.Json.Serialization;
 public class WeatherResponse
 {
-    public Coord coord { get; set; }
-    public List<Weather> weather { get; set; }
-    public string @base { get; set; }
-    public Main main { get; set; }
-    public int visibility { get; set; }
-    public Wind wind { get; set; }
-    public Clouds clouds { get; set; }
-    public int dt { get; set; }
-    public Sys sys { get; set; }
-    public int id { get; set; }
-    public string name { get; set; }
-    public int cod { get; set; }
+    [JsonPropertyName("name")]
+    public string Name { get; set; }
+    [JsonPropertyName("main")]
+    public Main Main { get; set; }
+    [JsonPropertyName("weather")]
+    public List<Weather> Weather { get; set; }
+    [JsonPropertyName("wind")]
+    public Wind Wind { get; set; }
+}
+
+public class Main
+{
+    [JsonPropertyName("temp")]
+    public double Temp { get; set; }
+    [JsonPropertyName("pressure")]
+    public int Pressure { get; set; }
+    [JsonPropertyName("humidity")]
+    public int Humidity { get; set; }
+    [JsonPropertyName("temp_min")]
+    public double TempMin { get; set; }
+    [JsonPropertyName("temp_max")]
+    public double TempMax { get; set; }
+}
+
+public class Weather
+{
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
+    [JsonPropertyName("main")]
+    public string Main { get; set; }
+    [JsonPropertyName("description")]
+    public string Description { get; set; }
+    [JsonPropertyName("icon")]
+    public string Icon { get; set; }
+}
+
+public class Wind
+{
+    [JsonPropertyName("speed")]
+    public double Speed { get; set; }
+    [JsonPropertyName("deg")]
+    public int Deg { get; set; }
 }

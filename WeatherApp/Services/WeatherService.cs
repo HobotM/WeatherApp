@@ -5,16 +5,29 @@ using WeatherApp.Models;
 
 public class WeatherService
 {
-    private readonly HttpClient _http;
+    private readonly HttpClient _httpClient;
 
-    public WeatherService(HttpClient http)
+    public WeatherService(HttpClient httpClient)
     {
-        _http = http;
+        _httpClient = httpClient;
     }
 
-    public async Task<WeatherResponse> GetWeatherAsync(string city)
+public async Task<WeatherResponse> GetWeather(string city)
+{
+    var response = await _httpClient.GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=0bb5173502f54f5a0f4f4e2dedb2998a&units=metric");
+
+    if (response.IsSuccessStatusCode)
     {
-        var response = await _http.GetStringAsync($"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=0bb5173502f54f5a0f4f4e2dedb2998a&units=metric");
-        return JsonSerializer.Deserialize<WeatherResponse>(response);
+        using var responseStream = await response.Content.ReadAsStreamAsync();
+        var options = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = null,
+        };
+        return await JsonSerializer.DeserializeAsync<WeatherResponse>(responseStream, options);
     }
+
+    return null;
+}
+
+
 }
