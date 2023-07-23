@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "REq1SLcR5ZJTYijo7XnMRJisUjgkZyDMQYEXeN5Uvmo=",
+  "Hash": "vmMr9yVfyQ36GKHi9eI+oGudR/MxiWxzltGph3G5cTc=",
   "Source": "WeatherApp",
   "BasePath": "_content/WeatherApp",
   "Mode": "Default",
@@ -270,6 +270,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\sunrise.png",
+      "SourceId": "WeatherApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\",
+      "BasePath": "_content/WeatherApp",
+      "RelativePath": "icons/sunrise.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\sunrise.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\sunset.png",
+      "SourceId": "WeatherApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\",
+      "BasePath": "_content/WeatherApp",
+      "RelativePath": "icons/sunset.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icons\\sunset.png"
     }
   ]
 }

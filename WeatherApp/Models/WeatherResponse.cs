@@ -10,6 +10,8 @@ public class WeatherResponse
     public List<Weather> Weather { get; set; }
     [JsonPropertyName("wind")]
     public Wind Wind { get; set; }
+    [JsonPropertyName("sys")]
+    public Sys Sys {get;set;}
 }
 
 public class Main
@@ -44,4 +46,13 @@ public class Wind
     public double Speed { get; set; }
     [JsonPropertyName("deg")]
     public int Deg { get; set; }
+}
+
+public class Sys
+{
+    [JsonPropertyName("sunrise")]
+    public long Sunrise { get; set; }
+
+    [JsonPropertyName("sunset")]
+    public long Sunset { get; set; }
 }

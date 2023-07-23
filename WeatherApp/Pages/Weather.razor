@@ -19,6 +19,8 @@
     <p>Description: @(WeatherResponse.Weather?.FirstOrDefault()?.Description ?? "N/A")</p>
     <p>Wind speed: @(WeatherResponse.Wind?.Speed ?? 0.0) m/s</p>
     <p>Pressure: @(WeatherResponse.Main?.Pressure ?? 0.0) hpa</p>
+    <p><img width="40px" src="/icons/sunrise.png"/> @DateTimeOffset.FromUnixTimeSeconds(WeatherResponse.Sys?.Sunrise ?? 0).ToLocalTime().TimeOfDay</p>
+    <p><img width="40px" src="/icons/sunset.png"/>  @DateTimeOffset.FromUnixTimeSeconds(WeatherResponse.Sys?.Sunset ?? 0).ToLocalTime().TimeOfDay</p>
     <img src="@($"http://openweathermap.org/img/wn/{WeatherResponse.Weather?.FirstOrDefault()?.Icon}@2x.png")" alt="Weather icon" />
 
 }
