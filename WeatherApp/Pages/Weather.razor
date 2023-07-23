@@ -22,13 +22,25 @@
     <img src="@($"http://openweathermap.org/img/wn/{WeatherResponse.Weather?.FirstOrDefault()?.Icon}@2x.png")" alt="Weather icon" />
 
 }
-
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <p>@ErrorMessage</p>
+}
 @code {
+    string ErrorMessage;
     WeatherRequest WeatherRequest = new WeatherRequest();
     WeatherResponse WeatherResponse;
 
-    private async Task HandleValidSubmit()
+  private async Task HandleValidSubmit()
+{
+    try
     {
         WeatherResponse = await WeatherService.GetWeather(WeatherRequest.City);
+        ErrorMessage = string.Empty; // clear any previous error message
     }
+    catch (HttpRequestException ex)
+    {
+        ErrorMessage = ex.Message;
+    }
+}
 }

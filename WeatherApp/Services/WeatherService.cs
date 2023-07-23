@@ -26,7 +26,7 @@ public async Task<WeatherResponse> GetWeather(string city)
         return await JsonSerializer.DeserializeAsync<WeatherResponse>(responseStream, options);
     }
 
-    return null;
+    throw new HttpRequestException($"Failed to get weather data for city {city}");
 }
 
 
