@@ -14,6 +14,8 @@
 {
     <h1>Weather in @WeatherResponse.Name</h1>
     <p>Temperature: @(WeatherResponse.Main?.Temp ?? 0.0) ℃</p>
+    <p>Min/Max Temperature: @(WeatherResponse.Main?.TempMin ?? 0.0) ℃ / @(WeatherResponse.Main?.TempMax ?? 0.0) ℃</p>
+    <p>Humidity: @(WeatherResponse.Main?.Humidity ?? 0.0)%</p>
     <p>Description: @(WeatherResponse.Weather?.FirstOrDefault()?.Description ?? "N/A")</p>
     <p>Wind speed: @(WeatherResponse.Wind?.Speed ?? 0.0) m/s</p>
     <p>Pressure: @(WeatherResponse.Main?.Pressure ?? 0.0) hpa</p>
