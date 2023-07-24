@@ -24,6 +24,13 @@
     <img src="@($"http://openweathermap.org/img/wn/{WeatherResponse.Weather?.FirstOrDefault()?.Icon}@2x.png")" alt="Weather icon" />
 
 }
+@if (ForecastResponse != null)
+{
+    foreach (var forecast in ForecastResponse.List)
+    {
+        <p>@DateTimeOffset.FromUnixTimeSeconds(forecast.Dt).ToLocalTime(): @forecast.Main.Temp ℃, @forecast.Weather.FirstOrDefault()?.Description</p>
+    }
+}
 @if (!string.IsNullOrEmpty(ErrorMessage))
 {
     <p>@ErrorMessage</p>
@@ -32,12 +39,14 @@
     string ErrorMessage;
     WeatherRequest WeatherRequest = new WeatherRequest();
     WeatherResponse WeatherResponse;
-
+    ForecastResponse ForecastResponse;
   private async Task HandleValidSubmit()
 {
     try
     {
         WeatherResponse = await WeatherService.GetWeather(WeatherRequest.City);
+        ForecastResponse = await WeatherService.GetForecast(WeatherRequest.City);
+
         ErrorMessage = string.Empty; // clear any previous error message
     }
     catch (HttpRequestException ex)
