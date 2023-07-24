@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using WeatherApp.Models;
-
+using WeatherApp.ForecastData;
 public class WeatherService
 {
     private readonly HttpClient _httpClient;
@@ -44,5 +44,6 @@ public async Task<ForecastResponse> GetForecast(string city)
 
     throw new HttpRequestException($"Failed to get weather data for city {city}");
 }
+
 
 }

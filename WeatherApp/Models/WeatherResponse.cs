@@ -12,6 +12,8 @@ public class WeatherResponse
     public Wind Wind { get; set; }
     [JsonPropertyName("sys")]
     public Sys Sys {get;set;}
+    [JsonPropertyName("timezone")]
+    public int Timezone { get; set; }
 }
 
 public class Main

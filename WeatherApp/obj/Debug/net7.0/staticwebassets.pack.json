@@ -57,6 +57,82 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\01d.svg",
+      "PackagePath": "staticwebassets\\icons\\01d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\01n.svg",
+      "PackagePath": "staticwebassets\\icons\\01n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\02d.svg",
+      "PackagePath": "staticwebassets\\icons\\02d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\02n.svg",
+      "PackagePath": "staticwebassets\\icons\\02n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\03d.svg",
+      "PackagePath": "staticwebassets\\icons\\03d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\03n.svg",
+      "PackagePath": "staticwebassets\\icons\\03n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\04d.svg",
+      "PackagePath": "staticwebassets\\icons\\04d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\04n.svg",
+      "PackagePath": "staticwebassets\\icons\\04n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\09d.svg",
+      "PackagePath": "staticwebassets\\icons\\09d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\09n.svg",
+      "PackagePath": "staticwebassets\\icons\\09n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\10d.svg",
+      "PackagePath": "staticwebassets\\icons\\10d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\10n.svg",
+      "PackagePath": "staticwebassets\\icons\\10n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\11d.svg",
+      "PackagePath": "staticwebassets\\icons\\11d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\11n.svg",
+      "PackagePath": "staticwebassets\\icons\\11n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\1232n.svg",
+      "PackagePath": "staticwebassets\\icons\\1232n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\13d.svg",
+      "PackagePath": "staticwebassets\\icons\\13d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\13n.svg",
+      "PackagePath": "staticwebassets\\icons\\13n.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\50d.svg",
+      "PackagePath": "staticwebassets\\icons\\50d.svg"
+    },
+    {
+      "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\50n.svg",
+      "PackagePath": "staticwebassets\\icons\\50n.svg"
+    },
+    {
       "Id": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\icons\\sunrise.png",
       "PackagePath": "staticwebassets\\icons\\sunrise.png"
     },
