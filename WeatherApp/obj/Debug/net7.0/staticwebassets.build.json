@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zbg9oEzTJIU0RqA4n877XsD79QiNWZ54M+4GM5/WZuU=",
+  "Hash": "Iq6UW2qVA44wbbhwdcAOUjad2zSxCrtUprRKzd4ALbM=",
   "Source": "WeatherApp",
   "BasePath": "_content/WeatherApp",
   "Mode": "Default",
@@ -627,6 +627,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icons\\sunset.png"
+    },
+    {
+      "Identity": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\main.js",
+      "SourceId": "WeatherApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\wwwroot\\",
+      "BasePath": "_content/WeatherApp",
+      "RelativePath": "main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\main.js"
     }
   ]
 }
