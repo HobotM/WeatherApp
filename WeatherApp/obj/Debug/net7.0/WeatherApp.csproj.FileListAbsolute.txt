@@ -22,7 +22,6 @@ C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\staticwebassets.pac
 C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\scopedcss\bundle\WeatherApp.styles.css
 C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\scopedcss\projectbundle\WeatherApp.bundle.scp.css
 C:\Users\Matt\Desktop\WeatherApp\WeatherApp\obj\Debug\net7.0\WeatherApp.dll

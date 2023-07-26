@@ -1,4 +1,4 @@
-@using ForecastData
+@using WeatherApp.ForecastData
 @page "/weather"
 @inject WeatherService WeatherService
 
@@ -6,7 +6,8 @@
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <InputText id="city" @bind-Value="@WeatherRequest.City"></InputText>
+    <InputText id="city" @bind-Value="WeatherRequest.City"></InputText>
+
 
     <button type="submit">Get Weather</button>
 </EditForm>
@@ -38,41 +39,38 @@
         forecastsByDay[day].Add(forecast);
     }
 
-<div id="accordion">
-    @{
-        int count = 0;
-        foreach (KeyValuePair<DateTimeOffset, List<Forecast>> forecastGroup in forecastsByDay)
-        {
-            <div class="card">
-                <div class="card-header" id="@("heading"+count)">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="@("#collapse"+count)" aria-expanded="true" aria-controls="@("collapse"+count)">
-                            @forecastGroup.Key.Date
-                        </button>
-                    </h2>
-                </div>
-
-                <div id="@("collapse"+count)" class="collapse @(count == 0 ? "show" : "")" aria-labelledby="@("heading"+count)">
-                    <div class="card-body">
-                        @foreach (var forecast in forecastGroup.Value)
-                        {
-                            var icon = forecast.Weather.FirstOrDefault()?.GetIconUrl(forecast.Dt, WeatherResponse.Sys.Sunrise, WeatherResponse.Sys.Sunset);
-                            <p>
-                                <img src="@icon" width="50" />
-                                @DateTimeOffset.FromUnixTimeSeconds(forecast.Dt).ToLocalTime(): @forecast.Main.Temp ℃, @forecast.Weather.FirstOrDefault()?.Description
-                            </p>
-                        }
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        @{
+            int count = 0;
+            foreach (KeyValuePair<DateTimeOffset, List<Forecast>> forecastGroup in forecastsByDay.Take(5)) // Takes the first 5 days forecast
+            {
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">@forecastGroup.Key.ToString("dddd") @GetDayWithSuffix(forecastGroup.Key)</h5>
+                        </div>
+                        <div class="card-body">
+                            @foreach (var forecast in forecastGroup.Value)
+                            {
+                                var time = DateTimeOffset.FromUnixTimeSeconds(forecast.Dt).ToLocalTime();
+                                var icon = forecast.Weather.FirstOrDefault()?.GetIconUrl(forecast.Dt, WeatherResponse.Sys.Sunrise, WeatherResponse.Sys.Sunset);
+                                <div class="d-flex align-items-center">
+                                    <img src="@icon" width="50" />
+                                    <p class="mb-0 ml-2">
+                                        @time.ToString("h tt"): @forecast.Main.Temp ℃
+                                    </p>
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
-            </div>
-            count++;
+                count++;
+            }
         }
-    }
-</div>
-
-
-
+    </div>
 }
+
+
 
 
 
@@ -100,6 +98,27 @@
         catch (HttpRequestException ex)
         {
             ErrorMessage = ex.Message;
+        }
+    }
+
+     private string GetDayWithSuffix(DateTimeOffset date)
+    {
+        int day = date.Day;
+        if (day % 10 == 1 && day != 11)
+        {
+            return day + "st";
+        }
+        else if (day % 10 == 2 && day != 12)
+        {
+            return day + "nd";
+        }
+        else if (day % 10 == 3 && day != 13)
+        {
+            return day + "rd";
+        }
+        else
+        {
+            return day + "th";
         }
     }
 }

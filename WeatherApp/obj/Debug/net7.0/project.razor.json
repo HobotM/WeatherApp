@@ -13,184 +13,14 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -966679323,
+        "HashCode": 1491128428,
         "Kind": "Components.Component",
-        "Name": "WeatherApp.Pages.Index",
+        "Name": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
         "AssemblyName": "WeatherApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "WeatherApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 296809289,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.Pages.Index",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WeatherApp.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "WeatherApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1346929642,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.Pages.Weather",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Weather"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.Pages.Weather",
-          "Common.TypeNameIdentifier": "Weather",
-          "Common.TypeNamespace": "WeatherApp.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1934858313,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.Pages.Weather",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WeatherApp.Pages.Weather"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.Pages.Weather",
-          "Common.TypeNameIdentifier": "Weather",
-          "Common.TypeNamespace": "WeatherApp.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -456810165,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.App",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "WeatherApp",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 446462633,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.App",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WeatherApp.App"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "WeatherApp",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -804582859,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.Shared.SurveyPrompt",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.SurveyPrompt",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Common.TypeNamespace": "WeatherApp.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -857039883,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.Shared.SurveyPrompt",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "WeatherApp.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.SurveyPrompt",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Common.TypeNamespace": "WeatherApp.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2136531243,
-        "Kind": "Components.Component",
-        "Name": "WeatherApp.Shared.MainLayout",
-        "AssemblyName": "WeatherApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
+            "TagName": "AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca"
           }
         ],
         "BoundAttributes": [
@@ -207,21 +37,21 @@
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.MainLayout",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "WeatherApp.Shared",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
+          "Common.TypeNameIdentifier": "AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
+          "Common.TypeNamespace": "__GeneratedComponent",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -67087939,
+        "HashCode": 25787852,
         "Kind": "Components.Component",
-        "Name": "WeatherApp.Shared.MainLayout",
+        "Name": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
         "AssemblyName": "WeatherApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WeatherApp.Shared.MainLayout"
+            "TagName": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca"
           }
         ],
         "BoundAttributes": [
@@ -238,89 +68,89 @@
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.MainLayout",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "WeatherApp.Shared",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
+          "Common.TypeNameIdentifier": "AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
+          "Common.TypeNamespace": "__GeneratedComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1277808747,
+        "HashCode": -1805888979,
         "Kind": "Components.ChildContent",
-        "Name": "WeatherApp.Shared.MainLayout.Body",
+        "Name": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca.Body",
         "AssemblyName": "WeatherApp",
         "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "MainLayout"
+            "ParentTag": "AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.MainLayout.Body",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "WeatherApp.Shared",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca.Body",
+          "Common.TypeNameIdentifier": "AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
+          "Common.TypeNamespace": "__GeneratedComponent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Runtime.Name": "Components.None"
         }
       },
       {
-        "HashCode": -1643968239,
+        "HashCode": -2094551490,
         "Kind": "Components.ChildContent",
-        "Name": "WeatherApp.Shared.MainLayout.Body",
+        "Name": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca.Body",
         "AssemblyName": "WeatherApp",
         "Documentation": "<member name=\"P:Microsoft.AspNetCore.Components.LayoutComponentBase.Body\">\r\n            <summary>\r\n            Gets the content to be rendered inside the layout.\r\n            </summary>\r\n        </member>",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "WeatherApp.Shared.MainLayout"
+            "ParentTag": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.MainLayout.Body",
-          "Common.TypeNameIdentifier": "MainLayout",
-          "Common.TypeNamespace": "WeatherApp.Shared",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca.Body",
+          "Common.TypeNameIdentifier": "AspNetCore_092ff97b8ee965edddbd67345d1868ba644f29ca",
+          "Common.TypeNamespace": "__GeneratedComponent",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.None"
         }
       },
       {
-        "HashCode": 1680978883,
+        "HashCode": 2012284149,
         "Kind": "Components.Component",
-        "Name": "WeatherApp.Shared.NavMenu",
+        "Name": "__GeneratedComponent.AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9",
         "AssemblyName": "WeatherApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "WeatherApp.Shared",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9",
+          "Common.TypeNameIdentifier": "AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9",
+          "Common.TypeNamespace": "__GeneratedComponent",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1937031741,
+        "HashCode": 1592208278,
         "Kind": "Components.Component",
-        "Name": "WeatherApp.Shared.NavMenu",
+        "Name": "__GeneratedComponent.AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9",
         "AssemblyName": "WeatherApp",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "WeatherApp.Shared.NavMenu"
+            "TagName": "__GeneratedComponent.AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "WeatherApp.Shared.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "WeatherApp.Shared",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9",
+          "Common.TypeNameIdentifier": "AspNetCore_a0e29b95597546121e87c59591cf82cf631088f9",
+          "Common.TypeNamespace": "__GeneratedComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -18956,52 +18786,6 @@
     "CSharpLanguageVersion": 1100
   },
   "RootNamespace": "WeatherApp",
-  "Documents": [
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\Pages\\Weather.razor",
-      "TargetPath": "Pages\\Weather.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Matt\\Desktop\\WeatherApp\\WeatherApp\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.3"
 }
