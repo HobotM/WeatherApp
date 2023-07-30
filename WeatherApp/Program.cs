@@ -1,15 +1,26 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using WeatherApp.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using WeatherApp.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+// Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-//builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<WeatherService>();
-builder.Services.AddHttpClient(); // Add this line to register HttpClient
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -22,10 +33,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication(); // Add this
+app.UseAuthorization(); // Add this
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
